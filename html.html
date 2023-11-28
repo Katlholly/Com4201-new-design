@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Com4201-New Design</title>
+</head>
+<body>
+
+  <div class="Header">
+    
+    <table class="tb222">
+      <tr><td>19/11/2023</td>
+        <td><button type="button" class="whetherBT"  onclick="location.href='https://hk.news.yahoo.com/weather/%E9%A6%99%E6%B8%AF/%E9%A6%99%E6%B8%AF/%E9%A6%99%E6%B8%AF-2165352'"><img width="40px" height="20px" src="whether.png"></button></td>
+      </tr></table>
+      <table class="tb22">
+      <tr>
+        <td><button type="button" class="whetherBT" onclick="location.href='./html.html'"><img class="headChique" width="50px" src="title.jpeg" alt="Chique"></button></td>
+                  <td class="headTitle"><img class="head" src="searchBar.png" alt="Chique"></td>
+                  <td class="headTitle"><img class="heads" src="pen.png" alt="Chique"></td>
+                  <div class="navbar">
+
+                    <td class="head1">
+                    <div class="dropdown">
+                      <button class="dropbtn" onclick="myFunction()">工具
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="myDropdown">
+                        <a href="https://login.yahoo.com/?display=narrow&.intl=tw&.lang=zh-Hant-TW&.src=twmobi&.done=https%3A%2F%2Fhk.mobi.yahoo.com%2Fmember%2Fatos">加入會員</a>
+                        <a href="https://hk.dictionary.search.yahoo.com/">字典</a>
+                        <a href="https://hk.mobile.yahoo.com/">APP下載</a>
+                      </div>
+                      </div> 
+                    </td>
+                    <td class="head2">
+                    <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction2()">新聞
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown2">
+                      <a href="https://hk.news.yahoo.com/">新聞</a>
+                      <a href="https://hk.finance.yahoo.com/">財經</a>
+                      <a href="https://hk.news.yahoo.com/celebrity">娛樂</a>
+                      <a href="https://hk.sports.yahoo.com/">體育</a>
+                      <a href="https://hk.finance.yahoo.com/currency-converter/">外幣報價</a>
+                      <a href="https://www.yahoo-news.com.hk/BBCChineseNews/">BBC</a>
+
+                    </div>
+                    </div> 
+                    </td>
+
+                    <td class="head3">
+                    <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction3()">生活
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown3">
+                      <a href="https://hk.tv.yahoo.com/">TV</a>
+                      <a href="https://hk.news.yahoo.com/movies/">電影</a>
+                      <a href="https://hk.news.yahoo.com/food">Food</a>
+                      <a href="https://hk.news.yahoo.com/style">Style</a>
+                      <a href="https://hk.news.yahoo.com/topic/hkshopping/">購物</a>
+                      <a href="https://hk.news.yahoo.com/topic/retirement">退休部署</a>
+                      <a href="https://hk.news.yahoo.com/jetso/">著數</a>
+                      <a href="https://hk.news.yahoo.com/tech/">Tech</a>
+                      <a href="https://hk.news.yahoo.com/topic/Yahoo-Health">健康醫療</a>
+                      <a href="https://hk.news.yahoo.com/topic/parenting-education">親子教育</a>
+                      <a href="https://hk.news.yahoo.com/travel">旅遊</a>
+                    </div>
+                    </div> 
+                    </td>
+
+                    <td class="head4">
+                    <div class="dropdown">
+                      <button class="dropbtn" onclick="myFunction4()">更多
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="myDropdown4">
+                        <a href="https://www.betterme-magazine.com/">好集慣</a>
+                        <a href="https://www.betterme-magazine.com/category/%e7%bf%92%e6%85%a3%e5%84%aa%e6%82%85/">集慣優悅</a>
+                        <a href="https://www.olo-magazine.com/?utm_source=Yahoo&utm_medium=homepage&utm_campaign=trough">OLO （網上雜誌）</a>
+                        <a href="https://yahoo-booking.openrice.com/">訂餐廳</a>
+                        <a href="https://hk.search.yahoo.com/">更多服務</a>
+                      </div>
+                      </div> 
+                    </td>
+
+                  </div>
+                  <script>
+
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    function myFunction2() {
+                      document.getElementById("myDropdown2").classList.toggle("show");
+                    }
+                    function myFunction3() {           
+                      document.getElementById("myDropdown3").classList.toggle("show");
+                    }
+                    function myFunction4() {
+                      document.getElementById("myDropdown4").classList.toggle("show");
+                    }
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                          myDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown2 = document.getElementById("myDropdown2");
+                        if (myDropdown2.classList.contains('show')) {
+                          myDropdown2.classList.remove('show');
+                        }
+                      }
+                    }
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown3 = document.getElementById("myDropdown3");
+                        if (myDropdown3.classList.contains('show')) {
+                          myDropdown3.classList.remove('show');
+                        }
+                      }
+                    }
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown4 = document.getElementById("myDropdown4");
+                        if (myDropdown4.classList.contains('show')) {
+                          myDropdown4.classList.remove('show');
+                        }
+                      }
+                    }
+                    </script>
+
+
+                  <td class="headTitles"><button type="button" class="headss" ><img  width="20px" height="20px"src="Notification.png"></button></td>
+                  <!-- <td class="headTitles"><button type="button"><img  width="20px" height="20px"src="Notification.png"></button></td>
+                  <div class="navbar">
+                  <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction5()"><img  width="20px" height="20px"src="Notification.png">
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div  class="head5" class="dropdown-content" id="myDropdown5">
+                      <a href="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=uh-mail&.lang=zh-Hant-HK&.intl=hk&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.src%3Dfp%26.intl%3Dhk%26.lang%3Dzh-Hant-HK%26activity%3Duh-mail">3封郵件未讀</a>
+                      <a href="https://www.betterme-magazine.com/category/%e7%bf%92%e6%85%a3%e5%84%aa%e6%82%85/">中電：明年基本電費仍上漲</a>
+                      <a href="https://hk.news.yahoo.com/%E7%B5%90%E5%A9%9A%E6%93%BA%E9%85%92%E9%96%8B%E6%94%AF%E5%B9%B3%E5%9D%87%E7%A0%B440%E8%90%AC%E5%85%83-%E7%A4%BE%E6%9C%83%E5%BE%A9%E5%B8%B8%E5%85%AC%E5%83%B9%E4%BA%BA%E6%83%85%E5%8D%83%E4%BA%94%E4%B8%8D%E8%AE%8A-035611842.html?.tsrc=bell-brknews">結婚擺酒平均開支破40萬元</a>
+                      <a href="https://hk.news.yahoo.com/%E7%A4%BE%E5%85%A7%E7%9B%B8%E8%A6%AA%EF%BD%9C%E9%A6%96%E9%9B%86%E5%8A%87%E6%83%85%E8%BC%95%E9%AC%86%E6%90%9E%E7%AC%91-anson-lo%E8%A2%AB%E6%8C%87%E5%A6%9D%E5%AE%B9%E9%81%8E%E7%99%BD%E5%85%BC%E5%94%94%E5%A4%A0%E6%B0%A3%E5%8B%A2-%E7%B6%B2%E6%B0%91%EF%BC%9A%E7%99%BD%E9%81%8E%E6%9E%B6golf%E8%BB%8A-094933662.html">Anson Lo被指妝容過白兼唔夠氣勢</a>
+                      <a href="https://hk.finance.yahoo.com/news/%E7%BE%8E%E8%82%A1%E6%98%8E%E5%B9%B4%E9%A0%90%E6%B8%AC%E6%84%88%E4%BE%86%E6%84%88%E7%89%9B-%E8%A1%B0%E9%80%80%E9%83%BD%E5%89%B5%E6%96%B0%E9%AB%98%EF%BC%9F-061018776.html">美股明年預測愈來愈牛</a>
+                    </div>
+                    </div> 
+</div> -->
+                    <!-- <script>
+                      function myFunction5() {
+                      document.getElementById("myDropdown5").classList.toggle("show");
+                    }
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown5 = document.getElementById("myDropdown5");
+                        if (myDropdown5.classList.contains('show')) {
+                          myDropdown5.classList.remove('show');
+                        }
+                      }
+                    }
+                    </script> -->
+
+
+
+                  <td class="headTitles"><button type="button" class="headsss" onclick="location.href='https://login.yahoo.com/?.src=ym&pspid=159600001&activity=uh-mail&.lang=zh-Hant-HK&.intl=hk&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.src%3Dfp%26.intl%3Dhk%26.lang%3Dzh-Hant-HK%26activity%3Duh-mail'"><img  width="20px" height="20px" src="Email.png" alt="Chique"></button></td>
+                  <td class="headTitles"><button type="button" class="headssss"  onclick="location.href='https://login.yahoo.com/?.src=hkfp&.intl=hk&.lang=zh-Hant-HK&.done=https://hk.yahoo.com&activity=uh-signin'"><img  width="85px" height="30px" src="log-in.png" alt="Chique"></button></td>
+              </tr>
+    </table>
+  </div>
+</header>
+<Table class="table1"><tr aria-colspan="2"><td>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">推介</label>
+    <div class="tab">
+
+      <p><img src="suggestion.png" /></p>
+    </div>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">港聞</label>
+    <div class="tab">
+      <p><img src="Kongnews.png" /></p>
+    </div>
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">獨家</label>
+    <div class="tab">
+      <p><img src="special.png" /></p>
+    </div>
+
+    <input type="radio" id="tab4" name="mytabs">
+    <label for="tab4">娛樂</label>
+    <div class="tab">
+      <p><img src="play.png" /></p>
+    </div>
+
+    <input type="radio" id="tab5" name="mytabs">
+    <label for="tab5">Style</label>
+    <div class="tab">
+      <p><img src="style.png" /></p>
+    </div>
+
+    <input type="radio" id="tab6" name="mytabs">
+    <label for="tab6">體育</label>
+    <div class="tab">
+      <p><img src="sport.png" /></p>
+    </div>
+
+    <input type="radio" id="tab7" name="mytabs">
+    <label for="tab7">財經</label>
+    <div class="tab">
+      <p><img src="econ.png" /></p>
+    </div>
+
+    <input type="radio" id="tab8" name="mytabs">
+    <label for="tab8">著數</label>
+    <div class="tab">
+      <p><img src="cheap.png" /></p>
+    </div></td>
+  <td>
+    <p><img width="300" class="rtCol" src="trend.png" /></p>
+    <p><img width="400" height="900px" src="adv.png" /></p>
+  </td>
+  
+  </tr>
+
+    <tr>
+      <td colspan="2">
+<footer  class="footer">
+    <table class="tb1">
+      <tr>
+        <td class="trr"><button class="tb1" onclick="location.href='https://legal.yahoo.com/e2/zh-hant/yahoo/terms/otos/index.html'">服務條款和私隱政策</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://legal.yahoo.com/e2/zh-hant/yahoo/privacy/dashboard/index.html'">私隱資訊主頁</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://hk.yahoo.com/everything/world'">世界雅虎</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://pressroom-yahoohk.tumblr.com/'">關於雅虎香港</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://www.adtech.yahooinc.com/hk'">廣告服務</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://yahoo.yadvertising.com.hk/'">搜尋推廣服務</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://www.yahooinc.com/careers/'">求職</button></td>
+                  <td class="trr"><button class="tb1" onclick="location.href='https://hk.help.yahoo.com/kb/account'">服務中心</button></td>
+              </tr>
+
+              <tr class="tb1">
+                <td class="trr"  colspan="8">© 2023 Yahoo. All rights reserved.</td>
+    </table>
+</footer>
+
+</td></tr></Table>
+
+  </div>
+</body>
+</html>
+
+<style>
+  body {
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    resize: none;
+    overflow: hidden;
+}
+
+.tb222{
+  float: right;
+  
+}
+
+.tb22{
+  margin-top:30px;
+}
+
+.table1{
+  width: 1100px;
+}
+
+.footer{
+  bottom:0px;
+  position:fixed;
+  left: 0;
+  background: #ffffff;
+}
+
+.tb1{
+   color: #421193;
+   text-align: center;
+   border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+
+}
+
+.tb12{
+   color: #421193;
+   text-align: center;
+   border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: -5px;
+  font-size:14px;
+ 
+  
+}
+
+.tb13{
+   color: #421193;
+   text-align: center;
+   border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: -5px;
+  z-index: -1;
+}
+
+.trr{
+  width:400px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.mytabs {
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 900px;
+    margin-top: 60px;
+    padding: 25px;
+    resize: none;
+
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 10px;
+    width: 60px;
+    background: #421193;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mytabs .tab {
+    width: 480px;
+    height: 100%;
+    padding: 2px;
+    background: #fff;
+    order: 1;
+    display: none;
+    resize: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #8c52ff;
+}
+
+.headChique {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 60px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: auto;
+  margin-left: 80px;
+  margin-right: 0;
+}
+
+.heads{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: auto;
+  margin-left: 550px;
+  margin-right: auto;
+
+}
+.headTitle {
+  position: absolute;
+  margin-top: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: 80px;
+
+}
+
+.headTitles {
+  position: absolute;
+  margin-top: 10px;
+  
+  margin-right: auto;
+  margin-left: 80px;
+
+}
+
+
+.rtCol{
+  margin-top: 60px;
+}
+
+.whetherBT{
+  border: none;
+  display: block;
+  margin-right: 0px;
+  cursor:pointer;
+}
+
+.headss{
+  position: absolute;
+  display: block;
+  margin-top: auto;
+  margin-left: 850px;
+  margin-right: auto;
+
+    cursor:pointer;
+    border:none;
+    width:auto;
+    height:45px;
+}
+
+.headsss{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: auto;
+  margin-left: 880px;
+  margin-right: auto;
+  border:none;
+  cursor:pointer;
+}
+
+.headssss{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: auto;
+  margin-left: 910px;
+  margin-right: auto;
+  border:none;
+  cursor:pointer;
+}
+
+
+.head1{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: 0px;
+  margin-left: 670px;
+
+
+}
+.head2{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: 0px;
+  margin-left: 730px;
+
+
+}
+.head3{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-left: 790px;
+
+
+}
+.head4{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: 0;
+  margin-left: 850px;
+  margin-right: auto;
+
+}
+
+.head5{
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 45px;
+  margin-top: 0;
+  margin-left: 910px;
+  margin-right: auto;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #421193;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  color: #8c52ff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #421193;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #8c52ff;
+}
+
+.show {
+  display: block;
+}
+</style>
